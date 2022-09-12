@@ -1,3 +1,19 @@
 <h1>apiLol</h1>
-
+<hr>
+<div class="row">
+  <div class="col">
+    <h2>Busca info de tus partidas <small>{{busqueda.summonerName}}</small></h2>
+    <form (ngSubmit)="buscar()">
+      <input
+       type="text"
+       placeholder="nombre invocador..."
+       name="summonerName"
+       [(ngModel)]="busqueda.summonerName"
+       >
+    </form>
+  </div>
+  <div class="col">
+    <h2>Resultado</h2>
+  </div>
+</div>
 

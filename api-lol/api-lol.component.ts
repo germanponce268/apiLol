@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Busqueda {
+  summonerName: string ;
+}
+
 @Component({
   selector: 'app-api-lol',
   templateUrl: './api-lol.component.html',
@@ -12,4 +16,11 @@ export class ApiLolComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  busqueda: Busqueda = {
+    summonerName : ''
+  }
+
+  buscar(){
+    console.log('Toma!')
+  }
 }
